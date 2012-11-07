@@ -13,7 +13,8 @@ ARTIFACTS = {
   junit:junit:4.10
   org.apache.ant:ant-junit:1.8.4
   org.mockito:mockito-core:1.9.0
-  org.codehaus.jstestrunner:jstestrunner-junit:1.0.2:false
+  org.codehaus.jstestrunner:jstestrunner-junit:1.0.2
+  org.codehaus.jackson:jackson-mapper-asl:1.8.2
   org.codehaus.plexus:plexus-utils:1.5.15
 }
 }
