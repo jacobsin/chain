@@ -1,0 +1,177 @@
+require 'ant'
+require 'rake/clean'
+require 'rake/ivy'
+require 'rake/sass'
+require 'rake/rjs'
+
+VERSION_NUMBER = '1.0.0'
+APP = 'chain'
+
+task :default => :jar
+
+jruby_home = Gem.default_bindir().gsub('/bin', '')
+
+main_src_dir = 'src/main/java'
+test_src_dir = 'src/test/java'
+qunit_src_dir = 'src/test/javascripts'
+main_resources_dir = 'src/main/resources'
+test_resources_dir = 'src/test/resources'
+
+lib_shipped_dir = 'lib/shipped'
+lib_reference_dir = 'lib/reference'
+
+build_dir = 'build'
+main_classes_dir = "#{build_dir}/classes"
+test_classes_dir = "#{build_dir}/test-classes"
+reports_dir = "#{build_dir}/reports"
+reports_junit_dir = "#{reports_dir}/junit"
+
+directory build_dir
+directory main_classes_dir
+directory test_classes_dir
+directory reports_dir
+directory reports_junit_dir
+
+#ENV.each {|key, value| puts "#{key} = #{value}" }
+
+CLEAN.include %w{build logs lib/**/*.jar}
+CLEAN.exclude 'lib/reference/ant.jar'
+CLEAN.exclude 'lib/reference/ant-launcher.jar'
+
+require 'rbconfig'
+puts Config::CONFIG['target_cpu']   # => 'i386','x86_64','x86'
+puts Config::CONFIG['target_os']    # => 'linux','darwin','mswin32'
+
+task :setup => [build_dir, 'ivy:artifacts', 'ant:setup']
+
+namespace :ant do
+  task :setup do
+    ant.path :id => 'lib.shipped.path' do
+      fileset :dir => lib_shipped_dir, :includes => '*.jar'
+      fileset :dir => lib_shipped_thunderhead_dir, :includes => '*.jar'
+    end
+    ant.path :id => 'lib.reference.path' do
+      fileset :dir => lib_reference_dir, :includes => '*.jar'
+    end
+    ant.path(:id => 'main.class.path') do
+      pathelement :location => main_classes_dir
+      path :refid => 'lib.shipped.path'
+    end
+    ant.path(:id => 'test.class.path') do
+      pathelement :location => test_classes_dir
+      path :refid => 'lib.reference.path'
+      path :refid => 'main.class.path'
+    end
+    ant.path(:id => 'jruby.jar.path') do
+      pathelement :location => "#{jruby_home}/lib/jruby.jar"
+    end
+    ant.taskdef :resource => 'org/codehaus/groovy/antlib.xml',
+                :classpathref => 'lib.shipped.path'
+    ant.taskdef :name => 'junit',
+                :classname => 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTask',
+                :classpathref => 'lib.reference.path'
+  end
+end
+
+desc 'Compile all'
+task :compile => %w(compile:main compile:test compile:assets)
+
+namespace :compile do
+  task :main => [:setup, main_classes_dir] do
+    ant.groovyc(:destdir => main_classes_dir) do
+      classpath :refid => 'main.class.path'
+      src { pathelement :location => main_src_dir }
+      javac :source => '1.6', :target => '1.6'
+    end
+    ant.copy(:todir => main_classes_dir) do
+      fileset :dir => main_resources_dir do
+        include :name => '**/*.*'
+      end
+    end
+  end
+
+  task :test => [:main, test_classes_dir] do
+    ant.groovyc(:destdir => test_classes_dir) do
+      classpath :refid => 'test.class.path'
+      src { pathelement :location => test_src_dir }
+      javac :source => '1.6', :target => '1.6'
+    end
+    ant.copy(:todir => test_classes_dir) do
+      fileset :dir => test_resources_dir do
+        include :name => '**/*.*'
+      end
+    end
+  end
+
+  task :qunit => [:setup, test_classes_dir] do
+    ant.groovyc(:destdir => test_classes_dir) do
+      classpath :refid => 'test.class.path'
+      src { pathelement :location => qunit_src_dir }
+      javac :source => '1.6', :target => '1.6'
+    end
+  end
+  
+  task :assets => %w(sass:compile js)
+
+  desc 'Compile js'
+  task :js => %w(setup rjs:optimize)
+end
+
+namespace :test do
+  task :setup => reports_junit_dir
+
+  desc 'Run all unit tests'
+  task :unit => [:setup, 'compile:test'] do
+    ant.junit(:printsummary => true, :haltonfailure => false, :haltonerror => true) do
+      classpath :refid => 'test.class.path'
+      formatter :type => 'xml'
+      batchtest(:fork => true, :todir => "#{reports_junit_dir}") do
+        fileset(:dir => test_classes_dir) do
+          include :name => '**/*Test.*'
+        end
+      end
+    end
+  end
+
+  desc 'Run all cucumber features'
+  task :features => [:setup, :compile] do
+    jvm_args = %W{-Duser.timezone=UTC
+                  -Djava.util.logging.config.file=logging.properties
+                  -Dlogback.access.config.file=logback-access.xml
+                  -Djruby.home=#{jruby_home}}
+
+    cucumber_opts = ENV['CUCUMBER_OPTS'] ? ENV['CUCUMBER_OPTS'].split(' '): %W{--expand --format pretty}
+
+    cucumber_opts += %W{--format junit    --out #{reports_dir}/cucumber
+                        --format html     --out #{reports_dir}/cucumber/features.html}
+
+    ant.java(:classname => 'org.jruby.Main', :fork => true, :failonerror => true) do
+      classpath do
+        path :refid => 'jruby.jar.path'
+        path :refid => 'test.class.path'
+      end
+      jvm_args.each { |v| jvmarg :value => v }
+      arg :value => '-S'
+      arg :value => "cucumber"
+      cucumber_opts.each { |v| arg :value => v }
+      env :key => 'JRUBY_OPTS', :value => '--1.9'
+      env :key => 'TEAMCITY_RAKE_RUNNER_MODE', :value=>'buildserver' if ENV['CUCUMBER_OPTS']
+    end
+  end
+
+  desc "Run all qunit tests"
+  task :qunit => [:setup, 'compile:qunit'] do
+    phantomjs = (Config::CONFIG['target_os'] =~ /mswin32/ ? 'C:\dev\tools\phantomjs\phantomjs-1.6.0-win32-static\phantomjs.exe' : '/usr/local/bin/phantomjs')
+    ant.junit(:printsummary => true, :haltonfailure => false, :haltonerror => true) do
+      classpath :refid => 'test.class.path'
+      formatter :type => 'xml'
+      sysproperty(:key=> 'org.codehaus.jstestrunner.commandPattern', :value=> "#{phantomjs} '%1$s' %2$s")
+      test(:name=> 'chain.test.QUnitTestSuite', :fork => true, :todir => "#{reports_junit_dir}")
+    end
+  end
+end
+
+task :jar => 'compile:main' do
+  ant.jar :destfile => "#{build_dir}/#{APP}-#{VERSION_NUMBER}.jar", :basedir => main_classes_dir
+end
+

@@ -1,0 +1,6 @@
+source 'http://rubygems.org'
+gem 'ruby-debug-base'
+gem 'ruby-debug-ide', '~> 0.4.17.beta9'
+gem 'rspec-expectations'
+gem 'jruby-openssl'
+gem 'term-ansicolor'
