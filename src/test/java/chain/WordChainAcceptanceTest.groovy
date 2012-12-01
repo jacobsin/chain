@@ -14,7 +14,7 @@ class WordChainAcceptanceTest {
 
   @Test
   def void invalidToWord() {
-    assert shouldFail {wordChain.solve("it", "ito")} == "invalid to word (ito). Expression: dictionary.isValid(to)"
+    assert shouldFail {wordChain.solve("run", "ito")} == "invalid to word (ito). Expression: dictionary.isValid(to)"
   }
 
   @Test
@@ -42,6 +42,6 @@ class WordChainAcceptanceTest {
 
   @Test
   def void noSolutionFound() {
-    assert shouldFail {assert wordChain.solve("it", "do")} == "no solution found from (it) to (do)"
+    assert shouldFail(NoSolutionFoundException) {wordChain.solve("it", "do")} == "no solution found from (it) to (do)"
   }
 }
