@@ -36,6 +36,11 @@ class WordChainAcceptanceTest {
   }
 
   @Test
+  def void solveWithTwoSteps() {
+    assert wordChain.solve("saw", "run") == ["saw", "raw", "ran", "run"]
+  }
+
+  @Test
   def void noSolutionFound() {
     assert shouldFail {assert wordChain.solve("it", "do")} == "no solution found from (it) to (do)"
   }
