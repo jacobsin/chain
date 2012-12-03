@@ -3,6 +3,8 @@ package chain
 
 class ScowlDictionary implements Dictionary {
 
+  def dictionaryDir = "src/main/resources/dictionary/scowl/final"
+  def dictionaryFiles = ["english-words": 50]
   def validWords = []
 
   ScowlDictionary(int length) {
@@ -10,8 +12,21 @@ class ScowlDictionary implements Dictionary {
   }
 
   private void initialize(int length) {
-    new File('src/main/resources/dictionary/scowl/final/english-words.10').withReader {r ->
-      r.eachLine {read->
+    dictionaryFiles.each {filename, maxSuffix ->
+      (10..maxSuffix).step(5) {suffix ->
+        def file = new File("${dictionaryDir}/${filename}.${suffix}")
+        if (file.exists()) {
+          loadFile(file, length)
+        }
+      }
+    }
+
+  }
+
+  private void loadFile(File file, int length) {
+    println "loading file ${file}"
+    file.withReader {r ->
+      r.eachLine {read ->
         if (read.length() == length && !read.contains('\'')) {
           validWords.add(read)
         }
@@ -24,7 +39,7 @@ class ScowlDictionary implements Dictionary {
   }
 
   List<String> find(List<String> patterns) {
-    patterns.collectMany {String it->find(it)}.unique()
+    patterns.collectMany {String it -> find(it)}.unique()
   }
 
   List<String> find(String pattern) {

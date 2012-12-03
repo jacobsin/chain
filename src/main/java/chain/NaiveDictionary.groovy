@@ -4,15 +4,23 @@ package chain
 class NaiveDictionary implements Dictionary {
 
   def validWords = [
+      "at",
       "do",
       "it",
       "so",
       "to",
+      "law",
       "ran",
       "raw",
+      "row",
       "run",
       "saw",
-      "you"
+      "you",
+      "easy",
+      "good",
+      "test",
+      "solution",
+      "existing"
   ]
 
   boolean isValid(String word) {

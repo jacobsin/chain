@@ -2,48 +2,61 @@ package chain
 
 
 class WordChain {
+  def differenceCount = 0
+  def nextStepPatterns = []
+  String from
+  String to
+  WordChain next
 
-  Dictionary dictionary
-
-  def solve(String from, String to) {
-    initialise(from.length())
-    validate(from, to)
-    def solved = doSolve(from, to)
-    if (solved) return solved
-    throw new NoSolutionFoundException(from, to)
+  WordChain(String from, String to) {
+    this.from = from
+    this.to = to
+    compare()
   }
 
-  void initialise(int length) {
-    dictionary = new NaiveDictionary()
-//    dictionary = new ScowlDictionary(length)
+  WordChain(String from, WordChain next) {
+    this.from = from
+    this.to = next.from
+    this.next = next
   }
 
-  List<String> doSolve(String from, String to) {
-    def comparison = new WordComparison(from, to)
-    if (comparison.differenceCount < 2) {
-      return [from, to]
-    } else {
-      def nextSteps = findNextSteps(comparison)
-      for (String nextStep : nextSteps) {
-        def solved = doSolve(nextStep, to)
-        if (solved) {
-          solved.add(0, from)
-          return solved
-        }
+  def compare() {
+    [from.toCharArray(), to.toCharArray()].transpose().eachWithIndex{it, i->
+      if (it[0] != it[1]) {
+        differenceCount++
+
+        def nextStepPattern = new StringBuilder(from)
+        nextStepPattern.setCharAt(i, '.' as char)
+        nextStepPatterns << nextStepPattern.toString()
       }
-      return null
     }
   }
 
-  def findNextSteps(WordComparison comparison) {
-    dictionary.find(comparison.nextStepPatterns).findAll {it != comparison.word1}
+  def static differenceCount(String from, String to) {
+    [from.toCharArray(), to.toCharArray()].transpose().sum{it[0] != it[1] ? 1: 0}
   }
 
-  void validate(String from, String to) {
-    assert from.length() == to.length(), "invalid to word length (${to.length()}), should be same length as from word (${from.length()})"
-    assert dictionary.isValid(from), "invalid from word (${from})"
-    assert dictionary.isValid(to), "invalid to word (${to})"
+  WordChain leftShift(String from) {
+    new WordChain(from, this)
   }
 
+  List<String> toList() {
+    if (next) return [from, *next.toList()]
+    [from, to]
+  }
+
+  WordChain optimize() {
+    def next = this.next
+    while(next) {
+      if (differenceCount(this.from, next.to) == 1) {
+        this.next = next.next
+      }
+      next = next.next
+    }
+    this.next?.optimize()
+  }
+
+  String toString() {
+    toList().join(" > ")
+  }
 }
-
