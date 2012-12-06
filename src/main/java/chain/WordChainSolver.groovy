@@ -3,8 +3,14 @@ package chain
 
 class WordChainSolver {
 
+  WordChainIO io = new WordChainIO()
   Dictionary dictionary
   Set<String> visited = []
+
+  def solve(String input) {
+    def parsed = io.parse(input)
+    io.format(solve(parsed.from, parsed.to))
+  }
 
   def solve(String from, String to) {
     initialise(from.length())
