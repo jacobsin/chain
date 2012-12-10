@@ -8,3 +8,6 @@ It comprises of:
 
 To run tests:
  - for Intellij user, open chain.iml in Intellij, run Unit Tests run configuration
+ - for Eclipse user
+   1. File > Import > General > Existing Projects into Workspace > select unzipped top directory as root directory
+   2. Run > Run History > chain

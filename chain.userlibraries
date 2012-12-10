@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="shipped" />
+  <library name="reference">
+    <archive path="/Users/jacob/Dev/java/chain/lib/reference/hamcrest-core.jar" />
+    <archive path="/Users/jacob/Dev/java/chain/lib/reference/junit.jar" />
+    <archive path="/Users/jacob/Dev/java/chain/lib/reference/hamcrest-core.jar" />
+    <archive path="/Users/jacob/Dev/java/chain/lib/reference/junit.jar" />
+  </library>
+  <library name="activemodel (v3.0.15, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/activemodel-3.0.15/lib" />
+  </library>
+  <library name="activemodel (v3.2.6, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/activemodel-3.2.6/lib" />
+  </library>
+  <library name="activerecord (v3.0.15, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/activerecord-3.0.15/lib" />
+  </library>
+  <library name="activerecord (v3.2.6, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/activerecord-3.2.6/lib" />
+  </library>
+  <library name="activesupport (v3.0.15, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/activesupport-3.0.15/lib" />
+  </library>
+  <library name="activesupport (v3.2.6, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/activesupport-3.2.6/lib" />
+  </library>
+  <library name="arel (v2.0.10, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/arel-2.0.10/lib" />
+  </library>
+  <library name="arel (v3.0.2.20120221150532, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/arel-3.0.2/lib" />
+  </library>
+  <library name="atoulme-Antwrap (v0.7.1, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/atoulme-Antwrap-0.7.1/lib" />
+  </library>
+  <library name="atoulme-Antwrap (v0.7.1, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/atoulme-Antwrap-0.7.1-java/lib" />
+  </library>
+  <library name="bootstrap-sass (v2.0.4.0, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/bootstrap-sass-2.0.4.0/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/bootstrap-sass-2.0.4.0/templates" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/bootstrap-sass-2.0.4.0/vendor" />
+  </library>
+  <library name="bouncy-castle-java (v1.5.0146.1, RVM: jruby-1.6.7.2 [global]) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/bouncy-castle-java-1.5.0146.1/lib" />
+  </library>
+  <library name="bouncy-castle-java (v1.5.0146.1, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/bouncy-castle-java-1.5.0146.1/lib" />
+  </library>
+  <library name="builder (v2.1.2, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/builder-2.1.2/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/builder-2.1.2/scripts" />
+  </library>
+  <library name="builder (v2.1.2, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/builder-2.1.2/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/builder-2.1.2/scripts" />
+  </library>
+  <library name="builder (v3.0.0, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/builder-3.0.0/lib" />
+  </library>
+  <library name="buildr (v1.4.5, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/buildr-1.4.5/addon" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/buildr-1.4.5/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/buildr-1.4.5/etc" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/buildr-1.4.5/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/buildr-1.4.5/rakelib" />
+  </library>
+  <library name="buildr (v1.4.5, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/buildr-1.4.5-java/addon" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/buildr-1.4.5-java/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/buildr-1.4.5-java/etc" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/buildr-1.4.5-java/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/buildr-1.4.5-java/rakelib" />
+  </library>
+  <library name="buildr (v1.4.6, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/buildr-1.4.6/addon" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/buildr-1.4.6/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/buildr-1.4.6/etc" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/buildr-1.4.6/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/buildr-1.4.6/rakelib" />
+  </library>
+  <library name="bundler (v1.1.1, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/bundler-1.1.1/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/bundler-1.1.1/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/bundler-1.1.1/man" />
+  </library>
+  <library name="bundler (v1.1.3, RVM: jruby-1.6.7.2 [global]) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/bundler-1.1.3/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/bundler-1.1.3/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/bundler-1.1.3/man" />
+  </library>
+  <library name="bundler (v1.1.3, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/bundler-1.1.3/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/bundler-1.1.3/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/bundler-1.1.3/man" />
+  </library>
+  <library name="bundler (v1.1.4, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/bundler-1.1.4/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/bundler-1.1.4/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/bundler-1.1.4/man" />
+  </library>
+  <library name="chunky_png (v1.2.5, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/chunky_png-1.2.5/benchmarks" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/chunky_png-1.2.5/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/chunky_png-1.2.5/tasks" />
+  </library>
+  <library name="compass (v0.12.2, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/compass-0.12.2/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/compass-0.12.2/frameworks" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/compass-0.12.2/lib" />
+  </library>
+  <library name="cucumber (v0.10.2, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/cucumber-0.10.2/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/cucumber-0.10.2/fixtures" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/cucumber-0.10.2/gem_tasks" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/cucumber-0.10.2/legacy_features" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/cucumber-0.10.2/lib" />
+  </library>
+  <library name="cucumber (v0.10.2, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/cucumber-0.10.2/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/cucumber-0.10.2/fixtures" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/cucumber-0.10.2/gem_tasks" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/cucumber-0.10.2/legacy_features" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/cucumber-0.10.2/lib" />
+  </library>
+  <library name="cucumber (v1.1.9, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/cucumber-1.1.9/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/cucumber-1.1.9/fixtures" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/cucumber-1.1.9/gem_tasks" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/cucumber-1.1.9/legacy_features" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/cucumber-1.1.9/lib" />
+  </library>
+  <library name="cucumber (v1.2.1, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/cucumber-1.2.1/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/cucumber-1.2.1/fixtures" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/cucumber-1.2.1/gem_tasks" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/cucumber-1.2.1/legacy_features" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/cucumber-1.2.1/lib" />
+  </library>
+  <library name="diff-lcs (v1.1.2, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/diff-lcs-1.1.2/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/diff-lcs-1.1.2/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/diff-lcs-1.1.2/tests" />
+  </library>
+  <library name="diff-lcs (v1.1.2, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/diff-lcs-1.1.2/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/diff-lcs-1.1.2/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/diff-lcs-1.1.2/tests" />
+  </library>
+  <library name="diff-lcs (v1.1.3, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/diff-lcs-1.1.3/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/diff-lcs-1.1.3/lib" />
+  </library>
+  <library name="fssm (v0.2.9, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/fssm-0.2.9/ext" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/fssm-0.2.9/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/fssm-0.2.9/profile" />
+  </library>
+  <library name="gherkin (v2.11.0, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/gherkin-2.11.0-java/js" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/gherkin-2.11.0-java/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/gherkin-2.11.0-java/ragel" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/gherkin-2.11.0-java/tasks" />
+  </library>
+  <library name="gherkin (v2.3.7, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/gherkin-2.3.7/ext" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/gherkin-2.3.7/ikvm" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/gherkin-2.3.7/java" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/gherkin-2.3.7/js" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/gherkin-2.3.7/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/gherkin-2.3.7/ragel" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/gherkin-2.3.7/tasks" />
+  </library>
+  <library name="gherkin (v2.3.7, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/gherkin-2.3.7-java/ikvm" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/gherkin-2.3.7-java/java" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/gherkin-2.3.7-java/js" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/gherkin-2.3.7-java/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/gherkin-2.3.7-java/ragel" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/gherkin-2.3.7-java/tasks" />
+  </library>
+  <library name="gherkin (v2.9.1, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/gherkin-2.9.1/ext" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/gherkin-2.9.1/js" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/gherkin-2.9.1/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/gherkin-2.9.1/ragel" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/gherkin-2.9.1/tasks" />
+  </library>
+  <library name="highline (v1.5.1, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/highline-1.5.1/lib" />
+  </library>
+  <library name="highline (v1.5.1, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/highline-1.5.1/lib" />
+  </library>
+  <library name="hoe (v2.3.3, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/hoe-2.3.3/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/hoe-2.3.3/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/hoe-2.3.3/template" />
+  </library>
+  <library name="hoe (v2.3.3, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/hoe-2.3.3/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/hoe-2.3.3/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/hoe-2.3.3/template" />
+  </library>
+  <library name="i18n (v0.5.0, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/i18n-0.5.0/ci" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/i18n-0.5.0/lib" />
+  </library>
+  <library name="i18n (v0.6.0, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/i18n-0.6.0/ci" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/i18n-0.6.0/lib" />
+  </library>
+  <library name="jruby-launcher (v1.0.14, RVM: jruby-1.6.7.2 [global]) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/jruby-launcher-1.0.14-java/build" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/jruby-launcher-1.0.14-java/inc" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/jruby-launcher-1.0.14-java/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/jruby-launcher-1.0.14-java/pkg" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/jruby-launcher-1.0.14-java/resources" />
+  </library>
+  <library name="jruby-launcher (v1.0.14, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/jruby-launcher-1.0.14-java/build" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/jruby-launcher-1.0.14-java/inc" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/jruby-launcher-1.0.14-java/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/jruby-launcher-1.0.14-java/pkg" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/jruby-launcher-1.0.14-java/resources" />
+  </library>
+  <library name="jruby-openssl (v0.7.6.1, RVM: jruby-1.6.7.2 [global]) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/jruby-openssl-0.7.6.1/lib" />
+  </library>
+  <library name="jruby-openssl (v0.7.6.1, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/jruby-openssl-0.7.6.1/lib" />
+  </library>
+  <library name="jruby-openssl (v0.7.7, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/jruby-openssl-0.7.7/lib" />
+  </library>
+  <library name="js-shipped" />
+  <library name="js-test" />
+  <library name="json (v1.5.1, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.5.1/benchmarks" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.5.1/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.5.1/data" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.5.1/ext" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.5.1/java" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.5.1/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.5.1/tests" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.5.1/tools" />
+  </library>
+  <library name="json (v1.5.1, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/json-1.5.1-java/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/json-1.5.1-java/tests" />
+  </library>
+  <library name="json (v1.6.5, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.6.5/benchmarks" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.6.5/data" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.6.5/diagrams" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.6.5/ext" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.6.5/java" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.6.5/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.6.5/tests" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json-1.6.5/tools" />
+  </library>
+  <library name="json (v1.7.3, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/json-1.7.3-java/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/json-1.7.3-java/tests" />
+  </library>
+  <library name="json_pure (v1.4.3, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/json_pure-1.4.3/benchmarks" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json_pure-1.4.3/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json_pure-1.4.3/data" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json_pure-1.4.3/ext" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json_pure-1.4.3/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json_pure-1.4.3/tests" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/json_pure-1.4.3/tools" />
+  </library>
+  <library name="json_pure (v1.4.3, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/json_pure-1.4.3/benchmarks" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/json_pure-1.4.3/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/json_pure-1.4.3/data" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/json_pure-1.4.3/ext" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/json_pure-1.4.3/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/json_pure-1.4.3/tests" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/json_pure-1.4.3/tools" />
+  </library>
+  <library name="linecache (v0.43, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/linecache-0.43/ext" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/linecache-0.43/lib" />
+  </library>
+  <library name="linecache (v0.46, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/linecache-0.46-java/lib" />
+  </library>
+  <library name="mime-types (v1.16, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/mime-types-1.16/lib" />
+  </library>
+  <library name="mime-types (v1.16, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/mime-types-1.16/lib" />
+  </library>
+  <library name="mime-types (v1.19.20120620224748, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/mime-types-1.19/lib" />
+  </library>
+  <library name="minitar (v0.5.3, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/minitar-0.5.3/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/minitar-0.5.3/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/minitar-0.5.3/tests" />
+  </library>
+  <library name="minitar (v0.5.3, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/minitar-0.5.3/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/minitar-0.5.3/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/minitar-0.5.3/tests" />
+  </library>
+  <library name="multi_json (v1.3.6, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/multi_json-1.3.6/lib" />
+  </library>
+  <library name="net-sftp (v2.0.4, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/net-sftp-2.0.4/lib" />
+  </library>
+  <library name="net-sftp (v2.0.4, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/net-sftp-2.0.4/lib" />
+  </library>
+  <library name="net-ssh (v2.0.23, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/net-ssh-2.0.23/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/net-ssh-2.0.23/support" />
+  </library>
+  <library name="net-ssh (v2.0.23, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/net-ssh-2.0.23/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/net-ssh-2.0.23/support" />
+  </library>
+  <library name="rake (v0.8.7, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/rake-0.8.7/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/rake-0.8.7/lib" />
+  </library>
+  <library name="rake (v0.8.7, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rake-0.8.7/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rake-0.8.7/lib" />
+  </library>
+  <library name="rake (v0.9.2.2, RVM: jruby-1.6.7.2 [global]) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/rake-0.9.2.2/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/rake-0.9.2.2/lib" />
+  </library>
+  <library name="rake (v0.9.2.2, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/rake-0.9.2.2/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/rake-0.9.2.2/lib" />
+  </library>
+  <library name="rest-client (v1.6.1, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/rest-client-1.6.1/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/rest-client-1.6.1/lib" />
+  </library>
+  <library name="rest-client (v1.6.1, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rest-client-1.6.1/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rest-client-1.6.1/lib" />
+  </library>
+  <library name="rest-client (v1.6.7, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rest-client-1.6.7/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rest-client-1.6.7/lib" />
+  </library>
+  <library name="rjb (v1.3.3, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/rjb-1.3.3/data" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/rjb-1.3.3/ext" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/rjb-1.3.3/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/rjb-1.3.3/samples" />
+  </library>
+  <library name="rspec (v2.1.0, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/rspec-2.1.0/lib" />
+  </library>
+  <library name="rspec (v2.1.0, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rspec-2.1.0/lib" />
+  </library>
+  <library name="rspec-core (v2.1.0, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/rspec-core-2.1.0/autotest" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/rspec-core-2.1.0/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/rspec-core-2.1.0/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/rspec-core-2.1.0/script" />
+  </library>
+  <library name="rspec-core (v2.1.0, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rspec-core-2.1.0/autotest" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rspec-core-2.1.0/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rspec-core-2.1.0/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rspec-core-2.1.0/script" />
+  </library>
+  <library name="rspec-expectations (v2.1.0, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/rspec-expectations-2.1.0/lib" />
+  </library>
+  <library name="rspec-expectations (v2.1.0, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rspec-expectations-2.1.0/lib" />
+  </library>
+  <library name="rspec-expectations (v2.10.0, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rspec-expectations-2.10.0/lib" />
+  </library>
+  <library name="rspec-mocks (v2.1.0, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/rspec-mocks-2.1.0/autotest" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/rspec-mocks-2.1.0/lib" />
+  </library>
+  <library name="rspec-mocks (v2.1.0, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rspec-mocks-2.1.0/autotest" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rspec-mocks-2.1.0/lib" />
+  </library>
+  <library name="ruby-debug-base (v0.10.3.4, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/ruby-debug-base-0.10.3.4-java/lib" />
+  </library>
+  <library name="ruby-debug-base (v0.10.4, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/ruby-debug-base-0.10.4/ext" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/ruby-debug-base-0.10.4/lib" />
+  </library>
+  <library name="ruby-debug-base (v0.10.4, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/ruby-debug-base-0.10.4-java/lib" />
+  </library>
+  <library name="ruby-debug-ide (v0.4.16, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/ruby-debug-ide-0.4.16/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/ruby-debug-ide-0.4.16/ext" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/ruby-debug-ide-0.4.16/lib" />
+  </library>
+  <library name="ruby-debug-ide (v0.4.17.beta9, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/ruby-debug-ide-0.4.17.beta9/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/ruby-debug-ide-0.4.17.beta9/ext" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/ruby-debug-ide-0.4.17.beta9/lib" />
+  </library>
+  <library name="rubyforge (v2.0.3, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/rubyforge-2.0.3/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/rubyforge-2.0.3/lib" />
+  </library>
+  <library name="rubyforge (v2.0.3, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rubyforge-2.0.3/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rubyforge-2.0.3/lib" />
+  </library>
+  <library name="rubygems-bundler (v1.0.2, RVM: jruby-1.6.7.2 [global]) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/rubygems-bundler-1.0.2/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/rubygems-bundler-1.0.2/lib" />
+  </library>
+  <library name="rubygems-bundler (v1.0.2, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/rubygems-bundler-1.0.2/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/rubygems-bundler-1.0.2/lib" />
+  </library>
+  <library name="rubyzip (v0.9.4, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/rubyzip-0.9.4/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/rubyzip-0.9.4/samples" />
+  </library>
+  <library name="rubyzip (v0.9.4, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rubyzip-0.9.4/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/rubyzip-0.9.4/samples" />
+  </library>
+  <library name="rvm (v1.11.3.3, RVM: jruby-1.6.7.2 [global]) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/rvm-1.11.3.3/lib" />
+  </library>
+  <library name="rvm (v1.11.3.3, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2@global/gems/rvm-1.11.3.3/lib" />
+  </library>
+  <library name="RVM: jruby-1.6.7.2 [global] facet library">
+    <archive path="/Users/jacob/.rvm/rubies/jruby-1.6.7.2/lib/ruby/site_ruby/1.8" />
+    <archive path="/Users/jacob/.rvm/rubies/jruby-1.6.7.2/lib/ruby/site_ruby/shared" />
+    <archive path="/Users/jacob/.rvm/rubies/jruby-1.6.7.2/lib/ruby/1.8" />
+    <archive path="/Users/jacob/Library/Application Support/IntelliJIdea11/ruby/rubystubs/rubystubs18" />
+  </library>
+  <library name="RVM: jruby-1.6.7.2 facet library">
+    <archive path="/Users/jacob/.rvm/rubies/jruby-1.6.7.2/lib/ruby/site_ruby/1.8" />
+    <archive path="/Users/jacob/.rvm/rubies/jruby-1.6.7.2/lib/ruby/site_ruby/shared" />
+    <archive path="/Users/jacob/.rvm/rubies/jruby-1.6.7.2/lib/ruby/1.8" />
+    <archive path="/Users/jacob/Library/Application Support/IntelliJIdea11/ruby/rubystubs/rubystubs18" />
+  </library>
+  <library name="sass (v3.1.20, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/sass-3.1.20/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/sass-3.1.20/extra" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/sass-3.1.20/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/sass-3.1.20/rails" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/sass-3.1.20/vendor" />
+  </library>
+  <library name="sources (v0.0.1, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/sources-0.0.1/lib" />
+  </library>
+  <library name="term-ansicolor (v1.0.5, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/term-ansicolor-1.0.5/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/term-ansicolor-1.0.5/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/term-ansicolor-1.0.5/tests" />
+  </library>
+  <library name="term-ansicolor (v1.0.5, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/term-ansicolor-1.0.5/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/term-ansicolor-1.0.5/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/term-ansicolor-1.0.5/tests" />
+  </library>
+  <library name="term-ansicolor (v1.0.7, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/term-ansicolor-1.0.7/bin" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/term-ansicolor-1.0.7/lib" />
+    <archive path="/Library/Ruby/Gems/1.8/gems/term-ansicolor-1.0.7/tests" />
+  </library>
+  <library name="term-ansicolor (v1.0.7, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/term-ansicolor-1.0.7/bin" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/term-ansicolor-1.0.7/lib" />
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/term-ansicolor-1.0.7/tests" />
+  </library>
+  <library name="tzinfo (v0.3.33, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/tzinfo-0.3.33/lib" />
+  </library>
+  <library name="xml-simple (v1.0.12, ruby-1.8.7-p249) [gem]">
+    <archive path="/Library/Ruby/Gems/1.8/gems/xml-simple-1.0.12/lib" />
+  </library>
+  <library name="xml-simple (v1.0.12, RVM: jruby-1.6.7.2) [gem]">
+    <archive path="/Users/jacob/.rvm/gems/jruby-1.6.7.2/gems/xml-simple-1.0.12/lib" />
+  </library>
+</eclipse-userlibraries>
+

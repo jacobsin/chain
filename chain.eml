@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<output-test url="file://$MODULE_DIR$/build/test-classes"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<testFolder url="file://$MODULE_DIR$/src/test/java"/>
+		<testFolder url="file://$MODULE_DIR$/src/test/resources"/>
+		<testFolder url="file://$MODULE_DIR$/src/test/javascripts"/>
+		<excludeFolder url="file://$MODULE_DIR$/.sass-cache"/>
+	</contentEntry>
+	<lib name="RVM: jruby-1.6.7.2 facet library" scope="PROVIDED"/>
+</component>
