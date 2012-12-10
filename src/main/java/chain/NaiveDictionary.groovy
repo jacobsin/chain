@@ -1,7 +1,7 @@
 package chain
 
 
-class NaiveDictionary implements Dictionary {
+class NaiveDictionary {
 
   def validWords = [
       "at",
