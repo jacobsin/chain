@@ -1,7 +1,7 @@
 chain
 =====
 
-This is the skeleton project in groovy for the TDD Competition 2013 WordChain problem
+This is the skeleton project in java for the TDD Competition 2013 WordChain problem
 It comprises of:
  - WordChainSolverAcceptanceTest, with 2 already passing and 1 failing acceptance tests
  - NaiveDictionaryTest, with 1 already passing unit test
