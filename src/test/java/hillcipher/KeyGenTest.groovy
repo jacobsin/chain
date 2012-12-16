@@ -9,6 +9,7 @@ class KeyGenTest {
   @Test
   def void generate() {
     def generated = kegGen.generate()
-    println generated
+    println "${generated.size()} keys"
+    println generated.join('\n----\n')
   }
 }
