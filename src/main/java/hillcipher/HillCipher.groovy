@@ -10,6 +10,12 @@ class HillCipher {
       [20, 17, 15]
   ])
 
+  static final Matrix INVERSED_KEY = new Matrix([
+      [8, 5, 10],
+      [21, 8, 21],
+      [21, 12, 8]
+  ])
+
   private static final char A_CHAR = ('A' as char).charValue()
 
   def decrypt(String encrypted) {
@@ -24,7 +30,12 @@ class HillCipher {
   def inverseMod26(Matrix key) {
     int det = Matrix.det(key).round()
     def inversedDet = inverseDetMod26(det)
-    adjucate(key) * inversedDet
+    def adjucate = adjucate(key)
+    adjucate.eachValue {
+      def value = (it * inversedDet) % 26
+      value > 0 ? value : value + 26
+    }
+    return adjucate
   }
 
   def adjucate(Matrix matrix) {
@@ -34,7 +45,7 @@ class HillCipher {
     for (int i = 1; i <= rows; i++) {
       a << []
       for (int j = 1; j <= columns; j++) {
-        a[-1] << cofactor(matrix,i,j)
+        a[-1] << cofactor(matrix, i, j)
       }
     }
     Matrix.transpose(new Matrix(a))
@@ -42,7 +53,7 @@ class HillCipher {
 
   double cofactor(Matrix matrix, int i, int j) {
     Matrix m = subMatrix(matrix, i, j)
-    return (-1)**(i+j) * Matrix.det(m).round()
+    return (-1) ** (i + j) * Matrix.det(m).round()
   }
 
   Matrix subMatrix(Matrix matrix, int i, int j) {

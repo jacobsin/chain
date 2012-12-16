@@ -9,11 +9,13 @@ class HillCipherTest {
   @Test
   void encrypt() {
     assert cipher.encrypt("ACT") == "POH"
+    assert cipher.encrypt("CAT") == "FIN"
   }
 
   @Test
   void decrypt() {
     assert cipher.decrypt("POH") == "ACT"
+    assert cipher.decrypt("FIN") == "CAT"
   }
 
   @Test
@@ -24,5 +26,10 @@ class HillCipherTest {
   @Test
   def void fromMod26() {
     assert cipher.fromMod26(Matrix.transpose(new Matrix([0, 2, 19]))) == "ACT"
+  }
+
+  @Test
+  def void inverse() {
+    assert cipher.inverseMod26(cipher.DEFAULT_KEY) == cipher.INVERSED_KEY
   }
 }
