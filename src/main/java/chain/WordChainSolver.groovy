@@ -20,10 +20,6 @@ class WordChainSolver {
           out << "\n"
         }
       }
-//      input.readLines()[1..-1].each { line ->
-//        out << solve(line)
-//        out << "\n"
-//      }
     }
   }
 
