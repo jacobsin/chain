@@ -62,9 +62,9 @@ class WordChainSolver {
 
   def findNextSteps(WordChain chain) {
     dictionary.find(chain.nextStepPatterns)
-        .findAll { !visited.contains(it) }
-    .collect { new WordChain(it, chain.to) }
-    .sort { it.differenceCount }
+      .findAll { !visited.contains(it) }
+      .collect { new WordChain(it, chain.to) }
+      .sort { it.differenceCount }
   }
 
   void validate(String from, String to) {
