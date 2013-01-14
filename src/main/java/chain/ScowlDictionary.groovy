@@ -24,7 +24,6 @@ class ScowlDictionary implements Dictionary {
   }
 
   private void loadFile(File file, int length) {
-    println "loading file ${file}"
     file.withReader {r ->
       r.eachLine {read ->
         if (read.length() == length && !read.contains('\'')) {

@@ -7,6 +7,26 @@ class WordChainSolver {
   Dictionary dictionary
   Set<String> visited = []
 
+  static void main(String[] args) {
+    new WordChainSolver().solveMany(System.in, System.out)
+  }
+
+  def solveMany(InputStream input, OutputStream output) {
+    output.withWriter { out ->
+      input.withReader { r ->
+        def cases = r.readLine() as int
+        (1..cases).each {
+          out << solve(r.readLine())
+          out << "\n"
+        }
+      }
+//      input.readLines()[1..-1].each { line ->
+//        out << solve(line)
+//        out << "\n"
+//      }
+    }
+  }
+
   def solve(String input) {
     def parsed = io.parse(input)
     io.format(solve(parsed.from, parsed.to))
@@ -18,7 +38,6 @@ class WordChainSolver {
     def solved = doSolve(new WordChain(from, to))
     if (solved) {
       solved.optimize()
-      println solved
       return solved.toList()
     }
     throw new NoSolutionFoundException(from, to)
@@ -30,7 +49,6 @@ class WordChainSolver {
   }
 
   WordChain doSolve(WordChain chain) {
-    println "solving ${chain}"
     visited.add(chain.from)
     if (chain.differenceCount < 2) {
       return chain
@@ -48,9 +66,9 @@ class WordChainSolver {
 
   def findNextSteps(WordChain chain) {
     dictionary.find(chain.nextStepPatterns)
-        .findAll {!visited.contains(it)}
-        .collect {new WordChain(it, chain.to)}
-        .sort {it.differenceCount}
+        .findAll { !visited.contains(it) }
+    .collect { new WordChain(it, chain.to) }
+    .sort { it.differenceCount }
   }
 
   void validate(String from, String to) {

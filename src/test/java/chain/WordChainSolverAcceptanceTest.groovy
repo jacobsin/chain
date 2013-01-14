@@ -1,5 +1,6 @@
 package chain
 
+import org.apache.tools.ant.filters.StringInputStream
 import org.junit.Test
 
 class WordChainSolverAcceptanceTest {
@@ -9,49 +10,58 @@ class WordChainSolverAcceptanceTest {
 
   @Test
   def void invalidFromWord() {
-    assert shouldFail {solver.solve("abc\nito")} == "invalid from word (abc). Expression: dictionary.isValid(from)"
+    assert shouldFail {solver.solve("abc ito")} == "invalid from word (abc). Expression: dictionary.isValid(from)"
   }
 
   @Test
   def void invalidToWord() {
-    assert shouldFail {solver.solve("run\nito")} == "invalid to word (ito). Expression: dictionary.isValid(to)"
+    assert shouldFail {solver.solve("run ito")} == "invalid to word (ito). Expression: dictionary.isValid(to)"
   }
 
   @Test
   def void invalidToWordLength() {
-    assert shouldFail {solver.solve("it\nyou")} == "invalid to word length (3), should be same length as from word (2). Expression: (from.length() == to.length())"
+    assert shouldFail {solver.solve("it you")} == "invalid to word length (3), should be same length as from word (2). Expression: (from.length() == to.length())"
   }
 
   @Test
   def void solveWithZeroStep() {
-    assert solver.solve("do\nto") == "do\nto"
-    assert solver.solve("do\nso") == "do\nso"
-    assert solver.solve("saw\nraw") == "saw\nraw"
-    assert solver.solve("saw\nsaw") == "saw\nsaw"
+    assert solver.solve("do to") == "do->to"
+    assert solver.solve("do so") == "do->so"
+    assert solver.solve("saw raw") == "saw->raw"
+    assert solver.solve("saw saw") == "saw->saw"
   }
 
   @Test
   def void solveWithOneStep() {
-    assert solver.solve("saw\nran") == "saw\nraw\nran"
+    assert solver.solve("saw ran") == "saw->raw->ran"
   }
 
   @Test
   def void solveWithTwoSteps() {
-    assert solver.solve("saw\nrun") == "saw\nraw\nran\nrun"
+    assert solver.solve("saw run") == "saw->raw->ran->run"
+  }
+
+  @Test
+  def void solveMany() {
+    def input = new StringInputStream("3\ndo to\nsaw ran\ntest easy\n")
+    def buf = new ByteArrayOutputStream()
+    def output = new PrintStream(buf)
+    solver.solveMany(input, output)
+    assert new String(buf.toByteArray()) == "do->to\nsaw->raw->ran\ntest->best->bast->east->easy\n"
   }
 
   @Test
   def void solveTestIsEasy() {
-    assert solver.solve("test\neasy") == "test\nbest\nbast\neast\neasy"
+    assert solver.solve("test easy") == "test->best->bast->east->easy"
   }
 
   @Test
   def void solveTestIsGood() {
-    assert solver.solve("test\ngood") == "test\nlest\nlost\nloot\nfoot\nfood\ngood"
+    assert solver.solve("test good") == "test->lest->lost->loot->foot->food->good"
   }
 
   @Test
   def void noSolutionFound() {
-    assert shouldFail(NoSolutionFoundException) {solver.solve("solution\nexisting")} == "no solution found from (solution) to (existing)"
+    assert shouldFail(NoSolutionFoundException) {solver.solve("solution existing")} == "no solution found from (solution) to (existing)"
   }
 }
