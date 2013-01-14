@@ -19,12 +19,12 @@ class WordChainIOTest {
 
   @Test
   def void parseFailsForOneWord() {
-    assert shouldFail {io.parse("from")} == "1 words found, expecting exactly 2. Expression: (inputs.length == 2)"
+    assert shouldFail {io.parse("from")} == "1 words found, expecting exactly 2 expected:<2> but was:<1>"
   }
 
   @Test
   def void parseFailsForThreeWords() {
-    assert shouldFail {io.parse("from to more")} == "3 words found, expecting exactly 2. Expression: (inputs.length == 2)"
+    assert shouldFail {io.parse("from to more")} == "3 words found, expecting exactly 2 expected:<2> but was:<3>"
   }
 
   @Test

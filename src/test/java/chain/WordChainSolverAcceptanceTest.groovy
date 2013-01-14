@@ -10,17 +10,17 @@ class WordChainSolverAcceptanceTest {
 
   @Test
   def void invalidFromWord() {
-    assert shouldFail {solver.solve("abc ito")} == "invalid from word (abc). Expression: dictionary.isValid(from)"
+    assert shouldFail {solver.solve("abc ito")} == "invalid from word (abc)"
   }
 
   @Test
   def void invalidToWord() {
-    assert shouldFail {solver.solve("run ito")} == "invalid to word (ito). Expression: dictionary.isValid(to)"
+    assert shouldFail {solver.solve("run ito")} == "invalid to word (ito)"
   }
 
   @Test
   def void invalidToWordLength() {
-    assert shouldFail {solver.solve("it you")} == "invalid to word length (3), should be same length as from word (2). Expression: (from.length() == to.length())"
+    assert shouldFail {solver.solve("it you")} == "invalid to word length (3), should be same length as from word (2) expected:<2> but was:<3>"
   }
 
   @Test
