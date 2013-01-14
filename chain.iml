@@ -32,8 +32,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/javascripts" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/javascripts" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.sass-cache" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />

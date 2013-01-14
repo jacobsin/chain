@@ -12,20 +12,24 @@ class ScowlDictionary implements Dictionary {
   }
 
   private void initialize(int length) {
-    dictionaryFiles.each {filename, maxSuffix ->
-      (10..maxSuffix).step(5) {suffix ->
+    dictionaryFiles.each { filename, maxSuffix ->
+      (10..maxSuffix).step(5) { suffix ->
         def file = new File("${dictionaryDir}/${filename}.${suffix}")
         if (file.exists()) {
-          loadFile(file, length)
+          read(file, length)
+        } else {
+          def stream = this.class.classLoader.getResourceAsStream("${dictionaryDir}/${filename}.${suffix}")
+          if (stream) {
+            read(stream, length)
+          }
         }
       }
     }
-
   }
 
-  private void loadFile(File file, int length) {
-    file.withReader {r ->
-      r.eachLine {read ->
+  private read(toRead, int length) {
+    toRead.withReader { r ->
+      r.eachLine { read ->
         if (read.length() == length && !read.contains('\'')) {
           validWords.add(read)
         }
@@ -38,10 +42,10 @@ class ScowlDictionary implements Dictionary {
   }
 
   List<String> find(List<String> patterns) {
-    patterns.collectMany {String it -> find(it)}.unique()
+    patterns.collectMany { String it -> find(it) }.unique()
   }
 
   List<String> find(String pattern) {
-    validWords.findAll {it.matches(pattern)}
+    validWords.findAll { it.matches(pattern) }
   }
 }
