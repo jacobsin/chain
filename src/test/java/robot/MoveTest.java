@@ -1,8 +1,9 @@
 package robot;
 
-import org.hamcrest.core.IsEqual;
-import org.junit.Assert;
 import org.junit.Test;
+
+import static org.hamcrest.core.IsEqual.equalTo;
+import static org.junit.Assert.assertThat;
 
 public class MoveTest {
 
@@ -10,7 +11,7 @@ public class MoveTest {
     public void parseFromCommandString() {
         Move move = Move.parse("east 1");
 
-        Assert.assertThat(move.getDirection(), IsEqual.equalTo("east"));
-        Assert.assertThat(move.getSteps(), IsEqual.equalTo(1));
+        assertThat(move.getDirection(), equalTo("east"));
+        assertThat(move.getSteps(), equalTo(1));
     }
 }
